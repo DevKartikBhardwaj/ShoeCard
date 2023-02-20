@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+body {
+  display: flex;
+  background-color: black;
+  box-sizing: content-box;
+  border: 2em solid white;
+  overflow: hidden;
+  border-right: 7em solid white;
+}
+
+img {
+  height: 100vh;
+  position: absolute;
+  top: -50px;
+  right: -9px;
+  filter: drop-shadow(10px 4px 6px rgb(61, 57, 57));
+  animation: updown 0.8s ease-in infinite alternate;
+  transition: all 0.2s;
+}
+
+
+@keyframes updown {
+
+
+  to {
+    transform: translateY(10px);
+  }
+}
+
+main {
+  margin: 5rem;
+  width: 50%;
+}
+
+
+
+.content>h2 {
+  font: 900 4.2rem "Fredoka One";
+  color: gold;
+  letter-spacing: 3px;
+  margin-bottom: 45px;
+}
+
+.content>h2>span {
+  display: block;
+  color: white;
+  filter: drop-shadow(-22px -12px 0px rgb(47, 47, 46));
+}
+
+.content>h4 {
+  font: 900 1.4rem "Roboto";
+  letter-spacing: 1px;
+  line-height: 2px;
+  margin-bottom: 18px;
+  color: #ede7e7;
+}
+
+.content>p {
+  color: #bcb8b8;
+  font: 500 1.2rem "Shantell Sans";
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  margin-bottom: 35px;
+}
+
+.btn-wrapper {
+  margin-bottom: 45px;
+}
+
+.btn-wrapper>button {
+  padding: 5px 30px;
+  border: none;
+  background-color: gold;
+  transition: all 0.5s;
+  color: white;
+  font: 900 1rem "Roboto";
+  cursor: pointer;
+}
+
+.btn-wrapper>button:hover {
+  background-color: goldenrod;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 40.25%;
+  align-items: center;
+}
+
+.bottom>h2 {
+  color: white;
+  font: 900 1.5rem "Roboto";
+  filter: drop-shadow(-22px -12px 0px rgb(47, 47, 46));
+}
+
+.bottom>button {
+  padding: 5px 20px;
+  border: none;
+  font: 400 1.1rem "Roboto";
+  color: white;
+  background-color: rgb(22, 172, 22);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.bottom>button:hover {
+  background-color: rgb(9, 108, 9);
+}
